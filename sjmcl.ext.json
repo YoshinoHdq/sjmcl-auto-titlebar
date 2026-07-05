@@ -1,0 +1,10 @@
+{
+  "identifier": "org.yoshino.auto_titlebar",
+  "name": "Auto Titlebar",
+  "description": "鼠标悬停时显示标题栏，移出时自动隐藏。",
+  "author": "hemekewayoshino",
+  "version": "0.1.0",
+  "frontend": { "entry": "frontend/index.js" },
+  "minimalLauncherVersion": "1.1.3",
+  "icon": "icon.png"
+}
