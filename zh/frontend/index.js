@@ -28,17 +28,17 @@ function disable(){delete document.body.dataset.atEnabled;var tb=document.queryS
 window.registerExtension(function(api){
   var R=api.React,C=api.ChakraUI,H=api.getHostContext(),X=H.actions;
   X.readFile("data/enabled.txt").then(function(t){if(t.trim()==="true"){var p=function(){var tb=document.getElementById("sjmcl-main-drag-region")?.parentElement;if(tb){enable();return;}setTimeout(p,300);};p();}}).catch(function(){});
-  return{homeWidget:{title:"Hide Title Bar",defaultWidth:280,minWidth:220,Component:function(){
+  return{homeWidget:{title:"\u9690\u85cf\u6807\u9898\u680f",defaultWidth:280,minWidth:220,Component:function(){
     var ch=R.useState(document.body.dataset.atEnabled==="1"),on=ch[0],set=ch[1];
     function dt(){var n=!on;set(n);document.body.dataset.atEnabled=n?"1":"0";X.writeFile("data/enabled.txt",n?"true":"false").catch(function(){});n?enable():disable();}
     return R.createElement(C.HStack,{align:"center",spacing:2,p:2},
-      R.createElement(C.Text,{fontSize:"sm",flex:1},"Auto-Hide Title Bar"),
+      R.createElement(C.Text,{fontSize:"sm",flex:1},"\u81ea\u52a8\u9690\u85cf\u6807\u9898\u680f"),
       R.createElement(C.Switch,{isChecked:on,onChange:dt,colorScheme:"blue",size:"sm"}));}},
   settingsPage:{Component:function(){
     var ch=R.useState(document.body.dataset.atEnabled==="1"),on=ch[0],set=ch[1];
     function dt(){var n=!on;set(n);document.body.dataset.atEnabled=n?"1":"0";X.writeFile("data/enabled.txt",n?"true":"false").catch(function(){});n?enable():disable();}
     return R.createElement(C.VStack,{align:"stretch",spacing:4,p:4},
-      R.createElement(C.Text,{fontSize:"lg",fontWeight:"bold"},"Auto-Hide Title Bar"),
+      R.createElement(C.Text,{fontSize:"lg",fontWeight:"bold"},"\u81ea\u52a8\u9690\u85cf\u6807\u9898\u680f"),
       R.createElement(C.HStack,{align:"center",justify:"space-between"},
-        R.createElement(C.Text,{fontSize:"sm"},"Enable Auto-Hide"),
+        R.createElement(C.Text,{fontSize:"sm"},"\u542f\u7528\u81ea\u52a8\u9690\u85cf"),
         R.createElement(C.Switch,{isChecked:on,onChange:dt,colorScheme:"blue"})));}}};},tk);})()

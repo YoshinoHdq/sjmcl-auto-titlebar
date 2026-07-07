@@ -2,7 +2,7 @@
 
 # Auto Titlebar
 
-Auto-hide the titlebar, show on hover 🖱️
+Shows title bar on hover, auto-hides when mouse leaves 🖱️
 
 **English · [简体中文](README.md)**
 
@@ -12,7 +12,11 @@ Auto-hide the titlebar, show on hover 🖱️
 
 ## 简介
 
-Auto Titlebar is a SJMCL extension that automatically shows the titlebar when hovering over the top of the launcher window and hides it when the mouse moves away, providing a cleaner fullscreen experience.
+Auto Titlebar is a SJMCL extension that shows the titlebar when hovering over the launcher window top and hides it when the mouse moves away.
+
+Two versions available:
+- **English** (org.yoshino.auto_titlebar)
+- **中文版** (org.yoshino.auto_titlebar.zh)
 
 ## Features
 
@@ -23,9 +27,9 @@ Auto Titlebar is a SJMCL extension that automatically shows the titlebar when ho
 
 ## Installation
 
-1. Download org.yoshino.auto_titlebar.sjmclx from Releases
+1. Download the .sjmclx file from Releases
 2. Open SJMCL → Settings → Extension Management → Import
-3. Hover over the window top to show the titlebar
+3. Enable it and hover over the window top
 
 ## Compatibility
 
