@@ -1,8 +1,10 @@
-﻿<div align=center>
+<div align=center>
 
 # Auto Titlebar
 
 鼠标悬停时显示标题栏，移出时自动隐藏 🖱️
+
+**[English](README.en.md) · 简体中文**
 
 </div>
 
